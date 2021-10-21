@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="mYaku.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>105, 15</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="mYakuLangJP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="mYakuLangJP.Text" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="mYakuLangEN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="mYakuLangEN.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="mYakuLangRU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 22</value>
+  </data>
+  <data name="mYakuLangRU.Text" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="mYakuLang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="mYakuLang.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="mYaku.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 26</value>
+  </data>
+  <data name="&gt;&gt;mYaku.Name" xml:space="preserve">
+    <value>mYaku</value>
+  </data>
+  <data name="&gt;&gt;mYaku.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="pb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>350, 227</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pb.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pb.Name" xml:space="preserve">
+    <value>pb</value>
+  </data>
+  <data name="&gt;&gt;pb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pb.Parent" xml:space="preserve">
+    <value>pImage</value>
+  </data>
+  <data name="&gt;&gt;pb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pImage.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 37</value>
+  </data>
+  <data name="pImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>885, 422</value>
+  </data>
+  <data name="pImage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pImage.Name" xml:space="preserve">
+    <value>pImage</value>
+  </data>
+  <data name="&gt;&gt;pImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pImage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pImage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ckDanger.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ckDanger.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckDanger.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ckDanger.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ckDanger.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 6</value>
+  </data>
+  <data name="ckDanger.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <data name="ckDanger.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ckDanger.Text" xml:space="preserve">
+    <value>Danger</value>
+  </data>
+  <data name="&gt;&gt;ckDanger.Name" xml:space="preserve">
+    <value>ckDanger</value>
+  </data>
+  <data name="&gt;&gt;ckDanger.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckDanger.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;ckDanger.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ckSex.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ckSex.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckSex.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ckSex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>599, 6</value>
+  </data>
+  <data name="ckSex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 17</value>
+  </data>
+  <data name="ckSex.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="ckSex.Text" xml:space="preserve">
+    <value>Sex</value>
+  </data>
+  <data name="&gt;&gt;ckSex.Name" xml:space="preserve">
+    <value>ckSex</value>
+  </data>
+  <data name="&gt;&gt;ckSex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckSex.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;ckSex.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="fbSave.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="fbSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 4</value>
+  </data>
+  <data name="fbSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 21</value>
+  </data>
+  <data name="fbSave.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="fbSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;fbSave.Name" xml:space="preserve">
+    <value>fbSave</value>
+  </data>
+  <data name="&gt;&gt;fbSave.Type" xml:space="preserve">
+    <value>Controls.FlatButton, TenhouViewerUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fbSave.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;fbSave.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ckYaku.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ckYaku.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckYaku.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ckYaku.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, 6</value>
+  </data>
+  <data name="ckYaku.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="ckYaku.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ckYaku.Text" xml:space="preserve">
+    <value>Yaku</value>
+  </data>
+  <data name="&gt;&gt;ckYaku.Name" xml:space="preserve">
+    <value>ckYaku</value>
+  </data>
+  <data name="&gt;&gt;ckYaku.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckYaku.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;ckYaku.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="ckColor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ckColor.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckColor.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ckColor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 6</value>
+  </data>
+  <data name="ckColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="ckColor.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ckColor.Text" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="&gt;&gt;ckColor.Name" xml:space="preserve">
+    <value>ckColor</value>
+  </data>
+  <data name="&gt;&gt;ckColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckColor.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;ckColor.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ckName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ckName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckName.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ckName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 6</value>
+  </data>
+  <data name="ckName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="ckName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ckName.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;ckName.Name" xml:space="preserve">
+    <value>ckName</value>
+  </data>
+  <data name="&gt;&gt;ckName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckName.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;ckName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ckShanten.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="ckShanten.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ckShanten.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="ckShanten.Location" type="System.Drawing.Point, System.Drawing">
+    <value>757, 6</value>
+  </data>
+  <data name="ckShanten.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 17</value>
+  </data>
+  <data name="ckShanten.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ckShanten.Text" xml:space="preserve">
+    <value>Shanten</value>
+  </data>
+  <data name="&gt;&gt;ckShanten.Name" xml:space="preserve">
+    <value>ckShanten</value>
+  </data>
+  <data name="&gt;&gt;ckShanten.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ckShanten.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;ckShanten.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="cbRound.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="cbRound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 4</value>
+  </data>
+  <data name="cbRound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 21</value>
+  </data>
+  <data name="cbRound.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cbRound.Name" xml:space="preserve">
+    <value>cbRound</value>
+  </data>
+  <data name="&gt;&gt;cbRound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cbRound.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;cbRound.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="fbForward.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="fbForward.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 4</value>
+  </data>
+  <data name="fbForward.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 21</value>
+  </data>
+  <data name="fbForward.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="fbForward.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="&gt;&gt;fbForward.Name" xml:space="preserve">
+    <value>fbForward</value>
+  </data>
+  <data name="&gt;&gt;fbForward.Type" xml:space="preserve">
+    <value>Controls.FlatButton, TenhouViewerUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fbForward.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;fbForward.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="fbBack.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="fbBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 4</value>
+  </data>
+  <data name="fbBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 21</value>
+  </data>
+  <data name="fbBack.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="fbBack.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="&gt;&gt;fbBack.Name" xml:space="preserve">
+    <value>fbBack</value>
+  </data>
+  <data name="&gt;&gt;fbBack.Type" xml:space="preserve">
+    <value>Controls.FlatButton, TenhouViewerUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fbBack.Parent" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;fbBack.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>885, 31</value>
+  </data>
+  <data name="pControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pControl.Name" xml:space="preserve">
+    <value>pControl</value>
+  </data>
+  <data name="&gt;&gt;pControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="dlgSave.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="dlgSave.Filter" xml:space="preserve">
+    <value>PNG (*.png)|*.png|All files (*.*)|*.*</value>
+  </data>
+  <data name="dlgSave.Title" xml:space="preserve">
+    <value>Save paifu to file</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>878, 459</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>830, 38</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Paifu Viewer</value>
+  </data>
+  <data name="&gt;&gt;mYakuLang.Name" xml:space="preserve">
+    <value>mYakuLang</value>
+  </data>
+  <data name="&gt;&gt;mYakuLang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mYakuLangJP.Name" xml:space="preserve">
+    <value>mYakuLangJP</value>
+  </data>
+  <data name="&gt;&gt;mYakuLangJP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mYakuLangEN.Name" xml:space="preserve">
+    <value>mYakuLangEN</value>
+  </data>
+  <data name="&gt;&gt;mYakuLangEN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mYakuLangRU.Name" xml:space="preserve">
+    <value>mYakuLangRU</value>
+  </data>
+  <data name="&gt;&gt;mYakuLangRU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgSave.Name" xml:space="preserve">
+    <value>dlgSave</value>
+  </data>
+  <data name="&gt;&gt;dlgSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>fPaifuViewer</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>TenhouViewerUI.NestedForm, TenhouViewerUI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

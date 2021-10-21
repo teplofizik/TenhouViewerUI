@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F28428AF-2704-4DBA-B73F-29BB21B70FB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TenhouViewerUI</RootNamespace>
+    <AssemblyName>TenhouViewerUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TenhouViewerUI.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AdvancedListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\StyledControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Style\CancelStyle.cs" />
+    <Compile Include="Controls\Style\CommonStyle.cs" />
+    <Compile Include="Controls\Style\ControlStyle.cs" />
+    <Compile Include="Controls\Style\ModeStyle.cs" />
+    <Compile Include="Controls\Style\OkStyle.cs" />
+    <Compile Include="Extension\Forms\ProgressBarColor.cs" />
+    <Compile Include="Extension\Math\Comparsion.cs" />
+    <Compile Include="fGames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGames.Designer.cs">
+      <DependentUpon>fGames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGraph.Designer.cs">
+      <DependentUpon>fGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fImport.Designer.cs">
+      <DependentUpon>fImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLastStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLastStat.Designer.cs">
+      <DependentUpon>fLastStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLoader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLoader.Designer.cs">
+      <DependentUpon>fLoader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMain.Open.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Text.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPlayers.Designer.cs">
+      <DependentUpon>fPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPaifuViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPaifuViewer.Designer.cs">
+      <DependentUpon>fPaifuViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fReplayViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReplayViewer.Designer.cs">
+      <DependentUpon>fReplayViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fSearch.Designer.cs">
+      <DependentUpon>fSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTournier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTournier.Designer.cs">
+      <DependentUpon>fTournier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTournier.Players.cs">
+      <DependentUpon>fTournier.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTournier.Table.cs">
+      <DependentUpon>fTournier.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTournier.Yaku.cs">
+      <DependentUpon>fTournier.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mahjong\Agari.cs" />
+    <Compile Include="Mahjong\Hand.cs" />
+    <Compile Include="Mahjong\Helper\HelperExtensions.cs" />
+    <Compile Include="Mahjong\Helper\ShantenCalculator.cs" />
+    <Compile Include="Mahjong\LobbyType.cs" />
+    <Compile Include="Mahjong\Player.cs" />
+    <Compile Include="Mahjong\Replay.cs" />
+    <Compile Include="Mahjong\Round.cs" />
+    <Compile Include="Mahjong\RoundData.cs" />
+    <Compile Include="Mahjong\Sets\Ankan.cs" />
+    <Compile Include="Mahjong\Sets\Chakan.cs" />
+    <Compile Include="Mahjong\Sets\Chi.cs" />
+    <Compile Include="Mahjong\Sets\Minkan.cs" />
+    <Compile Include="Mahjong\Sets\Nuki.cs" />
+    <Compile Include="Mahjong\Sets\Pon.cs" />
+    <Compile Include="Mahjong\Sets\Set.cs" />
+    <Compile Include="Mahjong\Statistic\StatisticExtension.cs" />
+    <Compile Include="Mahjong\Steps\Connect.cs" />
+    <Compile Include="Mahjong\Steps\DiscardTile.cs" />
+    <Compile Include="Mahjong\Steps\Disconnect.cs" />
+    <Compile Include="Mahjong\Steps\Dora.cs" />
+    <Compile Include="Mahjong\Steps\Draw.cs" />
+    <Compile Include="Mahjong\Steps\DrawTile.cs" />
+    <Compile Include="Mahjong\Steps\Naki.cs" />
+    <Compile Include="Mahjong\Steps\Riichi.cs" />
+    <Compile Include="Mahjong\Steps\Riichi1000.cs" />
+    <Compile Include="Mahjong\Steps\Ron.cs" />
+    <Compile Include="Mahjong\Steps\Step.cs" />
+    <Compile Include="Mahjong\Steps\Tsumo.cs" />
+    <Compile Include="Mahjong\Tile.cs" />
+    <Compile Include="Mahjong\Wall.cs" />
+    <Compile Include="Mahjong\Yaku.cs" />
+    <Compile Include="NestedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Output\Field.cs" />
+    <Compile Include="Output\Format.cs" />
+    <Compile Include="Output\FormatExtension.cs" />
+    <Compile Include="Output\Formatter.cs" />
+    <Compile Include="Output\YakuName.cs" />
+    <Compile Include="Paifu\PaifuRenderer.cs" />
+    <Compile Include="Parse\DecompositeExtension.cs" />
+    <Compile Include="Parse\NakiDecoder.cs" />
+    <Compile Include="Parse\ReaderExtension.cs" />
+    <Compile Include="Parse\Tenhou.cs" />
+    <Compile Include="Parse\WallGenerator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Project\Binder.cs" />
+    <Compile Include="Project\Checker.cs" />
+    <Compile Include="Project\Import\BasicImporter.cs" />
+    <Compile Include="Project\Import\Importer.cs" />
+    <Compile Include="Project\Import\MjLogImporter.cs" />
+    <Compile Include="Project\Import\WebImporter.cs" />
+    <Compile Include="Project\Loader.cs" />
+    <Compile Include="Project\LogParser.cs" />
+    <Compile Include="Project\TenhouHash.cs" />
+    <Compile Include="Project\TenhouProject.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Random\MT19937AR.cs" />
+    <Compile Include="Renderer\BasicRenderer.cs" />
+    <Compile Include="Renderer\TableRenderer.cs" />
+    <Compile Include="Renderer\TileImage.cs" />
+    <Compile Include="Search\Query.cs" />
+    <Compile Include="Search\Request\Builder.cs" />
+    <Compile Include="Search\Request\CheckExtension.cs" />
+    <Compile Include="Search\Request\Player.cs" />
+    <Compile Include="Search\Request\ReplayInfo.cs" />
+    <Compile Include="Search\Request\ReplayResult.cs" />
+    <Compile Include="Search\Request\RoundInfo.cs" />
+    <Compile Include="Search\Request\RoundResult.cs" />
+    <Compile Include="Search\Result.cs" />
+    <Compile Include="Search\ResultPack.cs" />
+    <Compile Include="Search\Search.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic\Collector.cs" />
+    <Compile Include="Statistic\Info.cs" />
+    <Compile Include="Tiles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tiles.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tournier\Plotter.cs" />
+    <Compile Include="Tournier\Result.cs" />
+    <Compile Include="Tournier\Tournier.cs" />
+    <Compile Include="Viewer\GameInfo.cs" />
+    <Compile Include="Viewer\PlayerInfo.cs" />
+    <Compile Include="Viewer\PlayerManage.cs" />
+    <Compile Include="XMLFile\XMLFile.cs" />
+    <EmbeddedResource Include="fGames.resx">
+      <DependentUpon>fGames.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGames.ru-RU.resx">
+      <DependentUpon>fGames.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGraph.resx">
+      <DependentUpon>fGraph.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fImport.resx">
+      <DependentUpon>fImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fImport.ru-RU.resx">
+      <DependentUpon>fImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLastStat.resx">
+      <DependentUpon>fLastStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLastStat.ru-RU.resx">
+      <DependentUpon>fLastStat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLoader.resx">
+      <DependentUpon>fLoader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.ru-RU.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPlayers.resx">
+      <DependentUpon>fPlayers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPlayers.ru-RU.resx">
+      <DependentUpon>fPlayers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPaifuViewer.resx">
+      <DependentUpon>fPaifuViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReplayViewer.resx">
+      <DependentUpon>fReplayViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fSearch.resx">
+      <DependentUpon>fSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTournier.resx">
+      <DependentUpon>fTournier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTournier.ru-RU.resx">
+      <DependentUpon>fTournier.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tiles.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\0m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\0p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\0s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\0z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\1m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\1p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\1s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\1z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\2m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\2p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\2s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\2z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\3m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\3p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\3s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\3z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\4m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\4p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\4s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\4z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\5m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\5p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\5s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\5z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\6m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\6p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\6s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\6z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\7m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\7p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\7s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\7z.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\8m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\8p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\8s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\9m.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\9p.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\9s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\tsumogiri.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\horizontal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\tiles\vertical.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TenhouViewerUI" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PaifuSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">600, 300</Value>
+    </Setting>
+    <Setting Name="ShowShanten" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowSex" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowColor" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowName" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowYaku" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowDanger" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="YakuLang" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jp</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

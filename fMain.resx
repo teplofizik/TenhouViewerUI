@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="mMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mProjectNew.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="mProjectNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="mProjectNew.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="mProjectSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="mProjectSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="mProjectOpen.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mProjectOpen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="mProjectOpen.Text" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="mProjectSep1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 6</value>
+  </data>
+  <data name="mProjectImportRecent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="mProjectImportRecent.Text" xml:space="preserve">
+    <value>Download recent games</value>
+  </data>
+  <data name="mProjectImportSep1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 6</value>
+  </data>
+  <data name="mProjectImportMyTenhou.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="mProjectImportMyTenhou.Text" xml:space="preserve">
+    <value>Load from "My Tenhou" directory</value>
+  </data>
+  <data name="mProjectImportDir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="mProjectImportDir.Text" xml:space="preserve">
+    <value>Load from specified directory...</value>
+  </data>
+  <data name="mProjectImportMjlog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="mProjectImportMjlog.Text" xml:space="preserve">
+    <value>Load .mjlog file...</value>
+  </data>
+  <data name="mProjectImportSep2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 6</value>
+  </data>
+  <data name="mProjectImportLogFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="mProjectImportLogFile.Text" xml:space="preserve">
+    <value>Download by log file...</value>
+  </data>
+  <data name="mProjectImportLog.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mProjectImportLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="mProjectImportLog.Text" xml:space="preserve">
+    <value>Download by log...</value>
+  </data>
+  <data name="mProjectImportUrl.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="mProjectImportUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 22</value>
+  </data>
+  <data name="mProjectImportUrl.Text" xml:space="preserve">
+    <value>Download by url...</value>
+  </data>
+  <data name="mProjectImport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="mProjectImport.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="mProject.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="mProject.Text" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="mmInfoLoader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="mmInfoLoader.Text" xml:space="preserve">
+    <value>Loader status...</value>
+  </data>
+  <data name="mInfoGamesList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="mInfoGamesList.Text" xml:space="preserve">
+    <value>Games list...</value>
+  </data>
+  <data name="mInfoPlayersList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="mInfoPlayersList.Text" xml:space="preserve">
+    <value>Players list...</value>
+  </data>
+  <data name="mInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 20</value>
+  </data>
+  <data name="mInfo.Text" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="mTournierResults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 22</value>
+  </data>
+  <data name="mTournierResults.Text" xml:space="preserve">
+    <value>Results...</value>
+  </data>
+  <data name="mTournier.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 20</value>
+  </data>
+  <data name="mTournier.Text" xml:space="preserve">
+    <value>Tournier</value>
+  </data>
+  <data name="mStatLast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="mStatLast.Text" xml:space="preserve">
+    <value>Last games...</value>
+  </data>
+  <data name="mStatGraph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="mStatGraph.Text" xml:space="preserve">
+    <value>Raiting graph...</value>
+  </data>
+  <data name="mStatGraph.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="testToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="testToolStripMenuItem.Text" xml:space="preserve">
+    <value>Test...</value>
+  </data>
+  <data name="mStat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="mStat.Text" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="mMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 24</value>
+  </data>
+  <data name="mMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mMenu.Name" xml:space="preserve">
+    <value>mMenu</value>
+  </data>
+  <data name="&gt;&gt;mMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="dlgOpenLog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>111, 17</value>
+  </metadata>
+  <data name="dlgOpenLog.Filter" xml:space="preserve">
+    <value>Text files (*.txt)|*.txt|All files (*.*)|*.*</value>
+  </data>
+  <data name="dlgOpenLog.Title" xml:space="preserve">
+    <value>Open log file</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 438</value>
+  </metadata>
+  <data name="lStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="lFiller.Size" type="System.Drawing.Size, System.Drawing">
+    <value>867, 17</value>
+  </data>
+  <data name="pbLoading.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 519</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>984, 22</value>
+  </data>
+  <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Name" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="dlgOpenMjlog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>230, 17</value>
+  </metadata>
+  <data name="dlgOpenMjlog.Filter" xml:space="preserve">
+    <value>Tenhou log file (*.mjlog)|*.mjlog</value>
+  </data>
+  <data name="dlgOpenMjlog.Title" xml:space="preserve">
+    <value>Open compressed tenhou log file</value>
+  </data>
+  <metadata name="tTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>361, 17</value>
+  </metadata>
+  <metadata name="dlgOpenSpecifiedFolder.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>448, 17</value>
+  </metadata>
+  <data name="dlgOpenSpecifiedFolder.Description" xml:space="preserve">
+    <value>Specify folder with tenhou *.mjlog files</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>984, 541</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TenhouViewer</value>
+  </data>
+  <data name="&gt;&gt;mProject.Name" xml:space="preserve">
+    <value>mProject</value>
+  </data>
+  <data name="&gt;&gt;mProject.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectNew.Name" xml:space="preserve">
+    <value>mProjectNew</value>
+  </data>
+  <data name="&gt;&gt;mProjectNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectSave.Name" xml:space="preserve">
+    <value>mProjectSave</value>
+  </data>
+  <data name="&gt;&gt;mProjectSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectOpen.Name" xml:space="preserve">
+    <value>mProjectOpen</value>
+  </data>
+  <data name="&gt;&gt;mProjectOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectSep1.Name" xml:space="preserve">
+    <value>mProjectSep1</value>
+  </data>
+  <data name="&gt;&gt;mProjectSep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImport.Name" xml:space="preserve">
+    <value>mProjectImport</value>
+  </data>
+  <data name="&gt;&gt;mProjectImport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportRecent.Name" xml:space="preserve">
+    <value>mProjectImportRecent</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportRecent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportSep1.Name" xml:space="preserve">
+    <value>mProjectImportSep1</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportSep1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportMyTenhou.Name" xml:space="preserve">
+    <value>mProjectImportMyTenhou</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportMyTenhou.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportDir.Name" xml:space="preserve">
+    <value>mProjectImportDir</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportMjlog.Name" xml:space="preserve">
+    <value>mProjectImportMjlog</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportMjlog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportSep2.Name" xml:space="preserve">
+    <value>mProjectImportSep2</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportSep2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportLogFile.Name" xml:space="preserve">
+    <value>mProjectImportLogFile</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportLogFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportLog.Name" xml:space="preserve">
+    <value>mProjectImportLog</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportUrl.Name" xml:space="preserve">
+    <value>mProjectImportUrl</value>
+  </data>
+  <data name="&gt;&gt;mProjectImportUrl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mInfo.Name" xml:space="preserve">
+    <value>mInfo</value>
+  </data>
+  <data name="&gt;&gt;mInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mmInfoLoader.Name" xml:space="preserve">
+    <value>mmInfoLoader</value>
+  </data>
+  <data name="&gt;&gt;mmInfoLoader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mInfoGamesList.Name" xml:space="preserve">
+    <value>mInfoGamesList</value>
+  </data>
+  <data name="&gt;&gt;mInfoGamesList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mInfoPlayersList.Name" xml:space="preserve">
+    <value>mInfoPlayersList</value>
+  </data>
+  <data name="&gt;&gt;mInfoPlayersList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mTournier.Name" xml:space="preserve">
+    <value>mTournier</value>
+  </data>
+  <data name="&gt;&gt;mTournier.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mTournierResults.Name" xml:space="preserve">
+    <value>mTournierResults</value>
+  </data>
+  <data name="&gt;&gt;mTournierResults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mStat.Name" xml:space="preserve">
+    <value>mStat</value>
+  </data>
+  <data name="&gt;&gt;mStat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mStatLast.Name" xml:space="preserve">
+    <value>mStatLast</value>
+  </data>
+  <data name="&gt;&gt;mStatLast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mStatGraph.Name" xml:space="preserve">
+    <value>mStatGraph</value>
+  </data>
+  <data name="&gt;&gt;mStatGraph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;testToolStripMenuItem.Name" xml:space="preserve">
+    <value>testToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;testToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgOpenLog.Name" xml:space="preserve">
+    <value>dlgOpenLog</value>
+  </data>
+  <data name="&gt;&gt;dlgOpenLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStatus.Name" xml:space="preserve">
+    <value>lStatus</value>
+  </data>
+  <data name="&gt;&gt;lStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lFiller.Name" xml:space="preserve">
+    <value>lFiller</value>
+  </data>
+  <data name="&gt;&gt;lFiller.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbLoading.Name" xml:space="preserve">
+    <value>pbLoading</value>
+  </data>
+  <data name="&gt;&gt;pbLoading.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgOpenMjlog.Name" xml:space="preserve">
+    <value>dlgOpenMjlog</value>
+  </data>
+  <data name="&gt;&gt;dlgOpenMjlog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tTimer.Name" xml:space="preserve">
+    <value>tTimer</value>
+  </data>
+  <data name="&gt;&gt;tTimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dlgOpenSpecifiedFolder.Name" xml:space="preserve">
+    <value>dlgOpenSpecifiedFolder</value>
+  </data>
+  <data name="&gt;&gt;dlgOpenSpecifiedFolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>fMain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

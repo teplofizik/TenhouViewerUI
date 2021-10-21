@@ -1,0 +1,321 @@
+
+<!-- saved from url=(0062)http://arcturus.su/~alvin/docs/tenhoudoc/commands.html#cmdHELO -->
+<html g_init="6864"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="charset=utf-8">
+        <title>Tenhou Protocol Documentation: Command Index</title>
+    </head>
+    <body data-feedly-mini="yes">
+        <a id="top">
+        <table border="0" width="100%">
+            <tbody><tr>
+                <td><h2>Command Index</h2>
+                    <i>2008-03-15</i> <!-- initial date -->
+                </td>
+                <td align="right">
+                    <a href="http://arcturus.su/~alvin/docs/tenhoudoc/index.html">Index</a><br>
+                    Tenhou Protocol Documentation
+                </td>
+            </tr>
+        </tbody></table>
+
+        <hr> <!-- -->
+        <!-- ============================================================== -->
+        <!-- I don't normally like using comments to separate things like this,
+        but this is going to get big and difficult to update so screw work
+        ethics. It's really annoying in C/C++ code though, indenting should be
+        enough there (stupid HTML). -->
+
+        <p>Command index; commands listed in order of when I document them (or
+        when I intend to document them).</p>
+
+        <p>Summary table details:
+        <table border="1">
+            <tbody><tr>
+                <td><b>Arguments</b></td>
+                <td>in <code>&lt;ABC x="y" z="123" /&gt;</code>, the arguments
+                    would be x and z</td>
+            </tr>
+            <tr>
+                <td><b>Used by</b></td>
+                <td>implies which end sends the type of packet (hence; server
+                    means server-&gt;client, client means client-&gt;server and
+                    server, client means server&lt;-&gt;client</td>
+            </tr>
+            <tr>
+                <td><b>Example</b></td>
+                <td>example message - number of examples shown based on how
+                    much is required for understanding. if there are multiple
+                    forms all should (usually) be shown. if it's used by both
+                    server and client, both are shown (and noted, too) - also,
+                    if one responds to another (as with <a href="./Command Index_files/Command Index.htm">HELO</a>), it's noted</td>
+            </tr>
+            <tr>
+                <td><b>Responses</b></td>
+                <td>what the opposing end responds with (if it's
+                    server&lt;-&gt;client the list is arbitrary and use should
+                    be implied in the command description). an ellipsis (...)
+                    means that the command can have many different responses
+                    that are much prompted much more dynamically - consult the
+                    following description for information on such stuff</td>
+            </tr>
+        </tbody></table>
+        </p>
+
+        <h3>Commands</h3>
+        </a><ul><a id="top">
+            <!-- COMMAND LIST -->
+            </a><li><a id="top"></a><a href="http://arcturus.su/~alvin/docs/tenhoudoc/commands.html#cmdZ">Z</a></li>
+            <li><a href="http://arcturus.su/~alvin/docs/tenhoudoc/commands.html#cmdERR">ERR</a></li>
+            <li><a href="./Command Index_files/Command Index.htm">HELO</a></li>
+            <li><a href="http://arcturus.su/~alvin/docs/tenhoudoc/commands.html#cmdCHAT">CHAT</a></li>
+        </ul>
+
+        <hr> <!-- -->
+        <!-- ============================================================== -->
+
+
+        <!-- Z -->
+        <a id="cmdZ">
+        <h3>Z</h3>
+        <table border="1">
+            <tbody><tr>
+                <td><b>Arguments</b></td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td><b>Used by</b></td>
+                <td>client</td>
+            </tr>
+            <tr>
+                <td><b>Example</b></td>
+                <td><code>&lt;Z /&gt;</code></td>
+            </tr>
+            <tr>
+                <td><b>Responses</b></td>
+                <td>none</td>
+            </tr>
+        </tbody></table>
+        <p>The client sends this to the server roughly every 5 seconds when
+        it's idling. It also appears to send it every time there is a 10 second
+        period of no messages from the client when it is in-game and whatnot.
+        This is the client's way of pinging the server to check that it is
+        still connected. When the send fails (no TCP ACK), the client pops up
+        that message asking to reload the client (YES/NO).</p>
+
+        <p>It is also the very first message the client sends to the server
+        when it reaches the login screen. The rate of these messages is about
+        15 seconds. Similarly whether or not the server acknowledges the
+        messages and uses them itself isn't known. The server may use the
+        messages in the same way the client does - to confirm a connection.</p>
+
+        <p>When emulating a client, it would probably be acceptable to send a Z
+        command every 5 seconds, regardless of where (login, lobby, in-game).
+        The server probably expects the commands but does not care if they are
+        at inappropriate times (unconfirmed, based on assumption).</p>
+        <!-- ============================================================== -->
+
+
+        <!-- ERR -->
+        </a><a id="cmdERR">
+        <h3>ERR</h3>
+        <table border="1">
+            <tbody><tr>
+                <td><b>Arguments</b></td>
+                <td>code</td>
+            </tr>
+            <tr>
+                <td><b>Used by</b></td>
+                <td>server</td>
+            </tr>
+            <tr>
+                <td><b>Example</b></td>
+                <td><code>&lt;ERR code="1001" /&gt;</code></td>
+            </tr>
+            <tr>
+                <td><b>Responses</b></td>
+                <td>none</td>
+            </tr>
+        </tbody></table>
+        </a><p><a id="cmdERR">ERR (for error) is sent when the server encounters an error with the
+        client or what it has said. Normally this is not a fatal error but
+        trivial, such as using a registered user's name to login (as opposed to
+        the PIN, which is expected). The code argument defines what type of
+        error it is, and the client interprets it appropriately (e.g. message
+        box popping up saying "you can't do xyz!"). For possible errors, see
+        the </a><a href="http://arcturus.su/~alvin/docs/tenhoudoc/errors.html">error list</a>.</p>
+        <!-- ============================================================== -->
+
+
+        <!-- HELO -->
+        <a id="cmdHELO">
+        <h3>HELO</h3>
+        <table border="1">
+            <tbody><tr>
+                <td><b>Arguments</b></td>
+                <td>name, tid, sx, uname, prof, prof3, expire</td>
+            </tr>
+            <tr>
+                <td><b>Used by</b></td>
+                <td>client, server</td>
+            </tr>
+            <tr>
+                <td><b>Example</b></td>
+                <td><i>client-&gt;server:</i> <code>&lt;HELO name="NoName"
+                        tid="0000" sx="M" /&gt;</code><br>
+                    <i>server-&gt;client:</i> <code>&lt;HELO
+                        uname="%4E%6F%4E%61%6D%64" /&gt;</code> (reply to above
+                    command)</td>
+            </tr>
+            <tr>
+                <td><b>Responses</b></td>
+                <td>HELO, <a href="http://arcturus.su/~alvin/docs/tenhoudoc/commands.html#cmdERR">ERR</a></td>
+            </tr>
+        </tbody></table>
+        </a><p><a id="cmdHELO">HELO (rather than HELLO) is sent by the client when it logs in. It
+        <u>always</u> sends three arguments: name, tid and sx. Name is the name
+        put in the box of the login screen. tid is an internal thing which
+        denotes the versions of clients (see the </a><a href="http://arcturus.su/~alvin/docs/tenhoudoc/versions.html">versions</a> page for details). sx, for sex,
+        is the sex picked in the small droplist box with 男 (male) and 女
+        (female). Male is denoted by "M", female by "F". uname is not used by
+        the client.</p>
+
+        <p>The server responds to a HELO command with either its own HELO
+        command, or an ERR. The server's HELO response consists of various
+        potential arguments, but always has uname at the least; here's a table
+        with notes on the possible arguments, since it beats putting it into a
+        paragraph properly:
+        <table border="1">
+            <tbody><tr>
+                <td><b>Argument</b></td>
+                <td><b>Description</b></td>
+            </tr>
+            <tr>
+                <td>uname</td>
+                <td>A <a href="http://arcturus.su/~alvin/docs/tenhoudoc/pformat.html">%formatted string</a> of the
+                    client's name that appears on Tenhou. That is, if one types
+                    in NoName, it gives NoName for the uname (%formatted). If
+                    you give it a PIN, it gives you the respective alias
+                    associated with that ID.</td>
+            </tr>
+            <tr>
+                <td>prof</td>
+                <td>Profile (prof) argument. This specifies the various
+                    4-player ranking details for the current account, if
+                    applicable (only for registered users). The format is:
+                    <code>?,?,rank,?,?,?,?,?,?,?,?,?,?,?,?</code><br>
+                    <table border="1">
+                        <tbody><tr><td>rank</td>
+                            <td>Overall Tenhou rank across the entire
+                                registered userbase</td></tr>
+                        <tr><td>?</td>
+                            <td>Unknown</td></tr>
+                    </tbody></table></td>
+            </tr>
+            <tr>
+                <td>prof3</td>
+                <td>Profile (prof) argument. This is the same format as prof,
+                    but in regards to 3-player ranking.</td>
+            </tr>
+            <tr>
+                <td>expire</td>
+                <td>This is when the account expires. It has a straightforward
+                    numerical date format: <code>yyyymmdd</code> (y year, m
+                    month, d day).</td>
+            </tr>
+        </tbody></table>
+        </p>
+        <!-- ============================================================== -->
+
+
+        <!-- CHAT -->
+        <a id="cmdCHAT">
+        <h3>CHAT</h3>
+        <table border="1">
+            <tbody><tr>
+                <td><b>Arguments</b></td>
+                <td>text, uname, lobby</td>
+            </tr>
+            <tr>
+                <td><b>Used by</b></td>
+                <td>client, server</td>
+            </tr>
+            <tr>
+                <td><b>Example</b></td>
+                <td><i>client-&gt;server:</i> <code>&lt;CHAT text="abc"
+                        /&gt;</code> (note: sometimes this might be in <a href="http://arcturus.su/~alvin/docs/tenhoudoc/pformat.html">%format</a>)<br>
+                    <i>server-&gt;client:</i> <code>&lt;CHAT
+                        uname="%4E%6F%4E%61%6D%65" text="%61%62%63"
+                        /&gt;</code> (reply to above command - this would be an
+                    echo that the server produces (read below))<br>
+                    <br> <!-- +++ -->
+                    <i>client-&gt;server:</i> <code>&lt;CHAT
+                        text="%2flobby%207447" /&gt;</code> (move to lobby
+                    7447)<br>
+                    <i>server-&gt;client:</i> <code>&lt;CHAT lobby="7447"
+                        /&gt;</code> (response to above command)</td>
+            </tr>
+            <tr>
+                <td><b>Responses</b></td>
+                <td>CHAT, ...</td>
+            </tr>
+        </tbody></table>
+        <p>CHAT is quite a dynamic command in that both ends of the connection
+        use it, and it is used as a request mechanism for the client. First and
+        foremost, it governs the chatbox seen in the top left.</p>
+
+        <p>A client can talk in the chatbox by typing in the given textbox. The
+        message sent is a CHAT message with a single text argument. The person
+        who is sending the chat is hence implicit as the server gathers the
+        information based on the connection the message is received from. When
+        this message is sent, the client should not immediately print the sent
+        message to the chatbox, but allow the server to echo the message
+        back.</p>
+
+        <p>The server can respond in two ways:
+        </p><ol>
+            <li>Reply back with a CHAT command echoing what was sent by the
+            client</li>
+            <li>Reply with an arbitrarily depending on the text argument to the
+            sent CHAT command</li>
+        </ol><p></p>
+
+        </a><p><a id="cmdCHAT">The arbitrary response is invoked by a text 'command', which is
+        normally some kind of string preceded by a forward-slash (/). For
+        example, the client periodically requests a </a><a href="http://arcturus.su/~alvin/docs/tenhoudoc/commands.html#cmdWG">WG</a>
+        command by sending a CHAT message with text="%2fwg" - the %2f means /
+        (0x2f = /). The server <u>never</u> echoes back messages beginning with
+        forward slashes. Here's the <a href="http://arcturus.su/~alvin/docs/tenhoudoc/chatcommands.html">CHAT command
+            list</a>.</p>
+
+        <p>CHAT messages from the server can have different sets of arguments
+        depending on the context, too:
+        </p><ol>
+            <li>Regular message - this is an actual chat message, and consists
+            of two arguments; uname and text. uname is the <u>alias</u> of the
+            message sender, normally (if not always; it's pretty trivial
+            though) in %format. text is the actual message (as sent by the
+            client's CHAT command, copy (maybe %formatted though) of its text
+            field). When messages are echoed back, they contain the message
+            sent and the alias of the user. This just tells the client to print
+            the message to the chatbox. CHAT messages sent and CHAT messages
+            received (even echoes) are transparent to the client.</li>
+
+            <li>Lobby switch - this uses the lobby argument only. The lobby
+            argument is literally the number of the lobby, and the client
+            notifies the user of the switch (this is usually prompted with a
+            /lobby CHAT command). Example: <code>&lt;CHAT lobby="7447"
+                /&gt;</code> (lobby 7447). When the flash client goes to a
+            lobby via URL, the flash client just immediately sends a /lobby
+            CHAT command, and the server responds (<a href="http://arcturus.su/tenhoulogs/1205873342.txt">log1205873342</a> shows
+            this).</li>
+        </ol><p></p>
+        <!-- ============================================================== -->
+
+
+        <hr> <!-- -->
+
+        <a href="http://arcturus.su/~alvin/docs/tenhoudoc/index.html">Index</a> <a href="http://arcturus.su/~alvin/docs/tenhoudoc/commands.html#top">Top</a><br>
+        <i>Last updated: 2008-03-19</i>
+    
+
+<div id="feedly-mini" title="feedly Mini tookit"></div><iframe src="./Command Index_files/index.htm" style="display: none;"></iframe></body></html>
